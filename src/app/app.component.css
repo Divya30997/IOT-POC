@@ -1,0 +1,31 @@
+.sidenav {
+    height: 100%;
+    width: 17em;
+    position: fixed;
+    z-index: 1;
+    top: 3em;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-style: solid;
+    border-color: #EBEBEB;
+}
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        color:black;
+        display: block;
+        border-bottom:solid;
+        border-color: #EBEBEB; 
+        padding: 1em;
+        padding-right: 150px;
+    }
+        .sidenav a:hover {
+            background-color: #E6FBFF;
+            color: #4d79ff;
+        }
+.Childern{
+    margin-left: 19em;
+}
