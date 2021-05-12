@@ -1,0 +1,9 @@
+{
+    "result": {
+    "diagnosticData": {
+    "hubNameTag": "CMS-HUB-123344",
+    "hubHardDiskConsumption": "80%",
+    "hubConnectivityStatus": "Success"
+    }
+    }
+    }
