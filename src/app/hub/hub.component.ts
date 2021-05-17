@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-hub',
-  templateUrl: './hub.component.html',
-  styleUrls: ['./hub.component.css']
+    selector: 'app-hub',
+    templateUrl: './hub.component.html',
+    styleUrls: ['./hub.component.css']
 })
 export class HubComponent implements OnInit {
 
-  constructor() { }
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
+    constructor() { }
 
-  ngOnInit(): void {
-  }
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
+    ngOnInit(): void {
+    }
 
 }

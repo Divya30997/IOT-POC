@@ -17,21 +17,21 @@ import { DataService } from './Services/data.service';
 
 @NgModule({
     declarations: [
-    AppComponent,
-    HubComponent,
-    HubDetailsComponent,
-    DeviceDetailsComponent,
-    ActivityComponent,
-    AboutHubComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
+        AppComponent,
+        HubComponent,
+        HubDetailsComponent,
+        DeviceDetailsComponent,
+        ActivityComponent,
+        AboutHubComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule
    
     
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
