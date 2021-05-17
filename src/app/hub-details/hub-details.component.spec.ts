@@ -1,3 +1,4 @@
+
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testing';
 import { DataService } from '../Services/data.service';
@@ -61,4 +62,5 @@ describe('HubDetailsComponent', () => {
       
     }));
     
+
 });
