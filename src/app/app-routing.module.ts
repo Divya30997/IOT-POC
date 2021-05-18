@@ -1,19 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import{ActivityComponent} from 'src/app/activity/activity.component';
-import{HubComponent} from 'src/app/hub/hub.component';
-import{HubDetailsComponent} from 'src/app/hub-details/hub-details.component';
-import{DeviceDetailsComponent} from 'src/app/device-details/device-details.component';
-import{AboutHubComponent} from 'src/app/about-hub/about-hub.component';
+
 const routes: Routes = [
-    {path:'!Activity', component: ActivityComponent},
-    { path: '!About', component: AboutHubComponent },
-    { path: '!Hub', component: HubComponent ,children: [ {
-        path:'!HubDetails' , component :HubDetailsComponent},
-    {path:'!DeviceDetails',component:DeviceDetailsComponent
-    
-    }
-    ]} ,
+    {path:'!Activity', loadChildren:()=> import('./activity/activity.module').then(m => m.ActivityModule)},
+    { path: '!About', loadChildren:()=>import('./about-hub/about-hub.module').then(m=>m.AboutHubModule)},
+    { path: '!Hub', loadChildren: () =>     import('./hub/hub-routing.module').then(m => m.HubRoutingModule) 
+    } ,
 
 
   
@@ -27,4 +19,4 @@ const routes: Routes = [
     exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [ActivityComponent,AboutHubComponent,HubComponent,HubDetailsComponent,DeviceDetailsComponent];
+export const routingComponents = [];

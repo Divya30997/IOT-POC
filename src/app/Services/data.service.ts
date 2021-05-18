@@ -11,7 +11,10 @@ export class DataService {
    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
    getData = () => {
        const url = 'assets/Data/Data.json';
-       return this.http.get(url);
+       return this.http
+           .get(url);
+           
+       
      
    }
 }

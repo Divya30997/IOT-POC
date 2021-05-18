@@ -21,6 +21,10 @@
       "dom"
     ]
   },
+  "files": [
+    "src/app/app.module.ts",
+    "src/app/hub/hub.module.ts"
+  ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
